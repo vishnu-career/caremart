@@ -1,6 +1,9 @@
 <?php echo $this->extend('index') ?>
-
 <?php echo $this->section('content') ?>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
     .green {
         background-color: #95C897;
@@ -24,49 +27,35 @@
     }
 
     .action-buttons a {
-        margin-right: 5px;
-        text-decoration: none;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-size: 14px;
-        color: #fff;
+        margin-right: 10px;
+        font-size: 18px;
     }
 
-    .action-buttons a.edit {
-        background-color: #17a2b8;
+    .action-buttons i:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
     }
 
-    .action-buttons a.delete {
-        background-color: #dc3545;
-    }
-
-    .action-buttons a.view {
-        background-color: #28a745;
-    }
-
-    .action-buttons a:hover {
-        opacity: 0.9;
-    }
     .add-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 16px;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    transition: background-color 0.3s ease;
-}
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 16px;
+        font-size: 14px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        transition: background-color 0.3s ease;
+    }
 
-.add-button:hover {
-    background-color: #0056b3;
-}
-
+    .add-button:hover {
+        background-color: #0056b3;
+    }
 </style>
 
 <h2>Uploaded Images</h2>
-<button><a href="<?php echo base_url('upimages') ?>" class="btn">Add Scroll Images</a></button>
+<a href="<?php echo base_url('upimages') ?>" class="add-button">Add Scroll Images</a>
+
 <div class="x_content">
     <div class="row">
         <div class="col-sm-12">
@@ -76,27 +65,29 @@
                         <tr>
                             <th>ID</th>
                             <th>Image</th>
-
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($images as $img): ?>
-                        <tr>
-                            <td><?php echo $img['id'] ?></td>
-                            <td><img src="<?php echo base_url('uploads/' . $img['image']) ?>" alt="Image"></td>
-
-                           <td class="action-buttons">
-    <a href="<?php echo base_url('toggle/' . $img['id']) ?>" class="<?php echo $img['status'] ? 'delete' : 'edit' ?>">
-        <?php echo $img['status'] ? 'Deactivate' : 'Activate' ?>
-    </a>
-    |
-    <a href="<?php echo base_url('edit/' . $img['id']) ?>" class="edit">Edit</a>
-    |
-    <a href="<?php echo base_url('delete/' . $img['id']) ?>" class="delete" onclick="return confirm('Are you sure you want to delete this image?')">Delete</a>
-</td>
-
-                        </tr>
+                        <?php
+                            $display_id      = 1;
+                            $reversed_images = array_reverse($images);
+                        foreach ($reversed_images as $img): ?>
+                            <tr>
+                                <td><?php echo $display_id++; ?></td>
+                                <td><img src="<?php echo base_url('uploads/' . $img['image']) ?>" alt="Image"></td>
+                                <td class="action-buttons">
+                                    <a href="<?php echo base_url('toggle/' . $img['id']) ?>" title="<?php echo $img['status'] ? 'Deactivate' : 'Activate' ?>">
+                                        <i class="fas                                                      <?php echo $img['status'] ? 'fa-toggle-on' : 'fa-toggle-off' ?>" style="color:<?php echo $img['status'] ? '#dc3545' : '#28a745' ?>"></i>
+                                    </a>
+                                    <a href="<?php echo base_url('edit/' . $img['id']) ?>" title="Edit">
+                                        <i class="fas fa-edit" style="color:#17a2b8;"></i>
+                                    </a>
+                                    <a href="<?php echo base_url('delete/' . $img['id']) ?>" onclick="return confirm('Are you sure you want to delete this image?')" title="Delete">
+                                        <i class="fas fa-trash-alt" style="color:#dc3545;"></i>
+                                    </a>
+                                </td>
+                            </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

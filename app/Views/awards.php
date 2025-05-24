@@ -1,14 +1,10 @@
 <?php echo $this->extend('index') ?>
 <?php echo $this->section('content') ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awards</title>
-</head>
-<body>
-   <style>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
     .green {
         background-color: #95C897;
         color: #fff;
@@ -31,33 +27,35 @@
     }
 
     .action-buttons a {
-        margin-right: 5px;
-        text-decoration: none;
-        padding: 4px 8px;
-        border-radius: 4px;
+        margin-right: 8px;
+        font-size: 18px;
+    }
+
+    .action-buttons i:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    .add-button {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 16px;
         font-size: 14px;
-        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        transition: background-color 0.3s ease;
     }
 
-    .action-buttons a.edit {
-        background-color: #17a2b8;
-    }
-
-    .action-buttons a.delete {
-        background-color: #dc3545;
-    }
-
-    .action-buttons a.toggle-status {
-        background-color: #ffc107;
-    }
-
-    .action-buttons a:hover {
-        opacity: 0.9;
+    .add-button:hover {
+        background-color: #0056b3;
     }
 </style>
 
 <h2>Awards</h2>
-<div><button><a href="<?php echo base_url('add-awards') ?>">Add Awards</a></button></div>
+<a href="<?php echo base_url('add-awards') ?>" class="add-button">Add Awards</a>
+
 <div class="x_content">
     <div class="row">
         <div class="col-sm-12">
@@ -74,27 +72,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($awards as $award): ?>
-                        <tr>
-                            <td><?php echo $award['id'] ?></td>
-                            <td><?php echo $award['name'] ?></td>
-                            <td><img src="<?php echo base_url('uploads/' . $award['image']) ?>" alt="Image"></td>
-                            <td><?php echo $award['team'] ?></td>
-                            <td><?php echo $award['direct'] ?></td>
-
-                            <td class="action-buttons">
-                                <?php if ($award['status'] === 'Active'): ?>
-                                   <a href="<?php echo base_url('toggle-statusawards/' . $award['id']) ?>" class="toggle-status" style="background-color: #ffc107;">Deactivate</a>
-
-                                <?php else: ?>
-                                  <a href="<?php echo base_url('toggle-statusawards/' . $award['id']) ?>" class="toggle-status" style="background-color: #28a745;">Activate</a>
-
-                                <?php endif; ?>
-                                <a href="<?php echo base_url('edit-awards/' . $award['id']) ?>" class="edit">Edit</a>
-                               <a href="<?php echo base_url('delete-awards/' . $award['id']) ?>" class="delete" onclick="return confirm('Delete this award?')">Delete</a>
-
-                            </td>
-                        </tr>
+                        <?php
+                            $serial   = 1;
+                            $reversed = array_reverse($awards);
+                        foreach ($reversed as $award): ?>
+                            <tr>
+                                <td><?php echo $serial++; ?></td>
+                                <td><?php echo $award['name'] ?></td>
+                                <td><img src="<?php echo base_url('uploads/' . $award['image']) ?>" alt="Image"></td>
+                                <td><?php echo $award['team'] ?></td>
+                                <td><?php echo $award['direct'] ?></td>
+                                <td class="action-buttons">
+                                    <a href="<?php echo base_url('toggle-statusawards/' . $award['id']) ?>" title="<?php echo $award['status'] === 'Active' ? 'Deactivate' : 'Activate' ?>">
+                                        <i class="fas                                                      <?php echo $award['status'] === 'Active' ? 'fa-rotate-left' : 'fa-check' ?>" style="color:<?php echo $award['status'] === 'Active' ? '#ffc107' : '#28a745' ?>"></i>
+                                    </a>
+                                    <a href="<?php echo base_url('edit-awards/' . $award['id']) ?>" title="Edit">
+                                        <i class="fas fa-edit" style="color:#17a2b8;"></i>
+                                    </a>
+                                    <a href="<?php echo base_url('delete-awards/' . $award['id']) ?>" onclick="return confirm('Delete this award?')" title="Delete">
+                                        <i class="fas fa-trash-alt" style="color:#dc3545;"></i>
+                                    </a>
+                                </td>
+                            </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>
@@ -103,6 +102,4 @@
     </div>
 </div>
 
-</body>
-</html>
 <?php echo $this->endSection() ?>
