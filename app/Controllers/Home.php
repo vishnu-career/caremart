@@ -190,7 +190,12 @@ class Home extends BaseController
 
     public function home()
     {
-        return view('index');
+        $model = new AdminModel();
+        $model->tables('image', 'id', ['image', 'status']);
+
+        // Show all images to admin
+        $data['images'] = $model->findAll();
+        return view('DetailsShow', $data);
     }
     public function dashboard()
     {
@@ -400,7 +405,7 @@ class Home extends BaseController
 
     public function deleteProduct($id)
     {
-        $model = new \App\Models\AdminModel();
+        $model = new AdminModel();
         $model->tables('products', 'id', ['name', 'image', 'description', 'status']);
 
         if ($model->delete($id)) {
