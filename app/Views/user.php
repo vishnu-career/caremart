@@ -947,30 +947,7 @@
 							<p class="qodef-hide-1194" style="font-weight: 500;">Follow us</p>
 						</div>
 					</div>
-					<div id="healthfirst_core_social_icons_group-2"
-						class="widget widget_healthfirst_core_social_icons_group qodef-header-widget-area-one"
-						data-area="header-widget-one">
-						<div class="qodef-social-icons-group">
-							<span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"
-								style="margin: 4px 10px 0px 0px">
-								<a itemprop="url" href="https://www.instagram.com/qodeinteractive/" target="_blank">
-									<span class="qodef-icon-font-awesome fab fa-instagram qodef-icon qodef-e"
-										style="font-size: 19px"></span> </a>
-							</span>
-							<span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"
-								style="margin: 4px 10px 0px 0px">
-								<a itemprop="url" href="https://www.pinterest.com/qodeinteractive/" target="_blank">
-									<span class="qodef-icon-fontkiko kiko-pinterest qodef-icon qodef-e"
-										style="font-size: 18px"></span> </a>
-							</span>
-							<span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"
-								style="margin: 3px 17px 0px 0px">
-								<a itemprop="url" href="https://twitter.com/QodeInteractive" target="_blank">
-									<span class="qodef-icon-fontkiko kiko-twitter qodef-icon qodef-e"
-										style="font-size: 19px"></span> </a>
-							</span>
-						</div>
-					</div>
+				
 
 
 					<div id="healthfirst_core_button-2"
@@ -1261,31 +1238,7 @@
 									<p class="qodef-hide-1194" style="font-weight: 500;">Follow us</p>
 								</div>
 							</div>
-							<div id="healthfirst_core_social_icons_group-4"
-								class="widget widget_healthfirst_core_social_icons_group qodef-sticky-right">
-								<div class="qodef-social-icons-group">
-									<span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"
-										style="margin: 4px 10px 0px 0px">
-										<a itemprop="url" href="https://www.instagram.com/qodeinteractive/"
-											target="_blank">
-											<span class="qodef-icon-font-awesome fab fa-instagram qodef-icon qodef-e"
-												style="font-size: 19px"></span> </a>
-									</span>
-									<span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"
-										style="margin: 4px 10px 0px 0px">
-										<a itemprop="url" href="https://www.pinterest.com/qodeinteractive/"
-											target="_blank">
-											<span class="qodef-icon-fontkiko kiko-pinterest qodef-icon qodef-e"
-												style="font-size: 18px"></span> </a>
-									</span>
-									<span class="qodef-shortcode qodef-m  qodef-icon-holder  qodef-layout--normal"
-										style="margin: 3px 17px 0px 0px">
-										<a itemprop="url" href="https://twitter.com/QodeInteractive" target="_blank">
-											<span class="qodef-icon-fontkiko kiko-twitter qodef-icon qodef-e"
-												style="font-size: 19px"></span> </a>
-									</span>
-								</div>
-							</div>
+							
 							<div id="healthfirst_core_button-3" style="border-radius: 100px;"
 								class="widget widget_healthfirst_core_button qodef-sticky-right"><a
 									class="qodef-shortcode qodef-m  qodef-button qodef-layout--filled   qodef-html--link "
@@ -1508,173 +1461,109 @@
 				</div>
 			</div>
 		</header>
-		<style>
-			.carousel-inner img {
-				height: 500px;
-				object-fit: cover;
-			}
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-			/* Style for the arrows */
-			.carousel-control-prev,
-			.carousel-control-next {
-				width: 5%;
-				top: 50%;
-				transform: translateY(-50%);
-			}
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
-			.carousel-control-prev-icon,
-			.carousel-control-next-icon {
-				background-color: rgba(0, 0, 0, 0.6);
-				/* Semi-transparent background */
-				padding: 20px;
-				border-radius: 50%;
-				background-size: 60% 60%;
-			}
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+      height: 100vh; /* Full screen height */
+    }
 
-			.carousel-control-prev {
-				left: 10px;
-			}
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Use "contain" if you want to show the full image */
+    }
 
-			.carousel-control-next {
-				right: 10px;
-			}
-		</style>
-		</head>
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
-		<body>
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 50%;
+      background-size: 60% 60%;
+    }
+  </style>
+</head>
+<body>
 
-			<div id="homepage" id="qodef-page-outer">
-				<div id="qodef-page-inner" class="qodef-content-full-width">
-					<main id="qodef-page-content" class="qodef-grid qodef-layout--template">
-						<div class="qodef-grid-inner clear">
-							<div class="qodef-grid-item qodef-page-content-section qodef-col--12">
-								<di data-elementor-type="wp-page" data-elementor-id="35"
-									class="elementor elementor-35">
-									<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-									<section>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <?php $i = 1; foreach ($images as $index => $image): ?>
+        <div class="carousel-item<?php echo $i === 1 ? ' active' : ''; ?>">
+          <img src="<?php echo base_url('uploads/' . $image['image']); ?>" alt="Slide<?php echo $index + 1; ?>">
+        </div>
+      <?php $i++; endforeach; ?>
+    </div>
 
-
-
-
-									<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-  <div class="carousel-inner">
-    <?php $i = 1;foreach ($images as $index => $image): ?>
-      <div class="carousel-item<?php echo $i === 1 ? ' active' : ''; ?>">
-        <img src="<?php echo base_url('uploads/' . $image['image']); ?>" class="d-block w-100" alt="Slide<?php echo $index + 1; ?>">
-      </div>
-    <?php $i++;endforeach; ?>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <!-- Arrows -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-									</section>
-
-								</div>
-							</div>
-						</div>
-					</main>
-				</div>
-			</div>
-
-			<!-- Bootstrap JS -->
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-			<!-- Optional JS to initialize carousel -->
-			<script>
-				var myCarousel = document.querySelector('#carouselExampleSlidesOnly');
-				var carousel = bootstrap.Carousel.getInstance(myCarousel);
-				if (!carousel) {
-					carousel = new bootstrap.Carousel(myCarousel, {
-						interval: 3000,
-						ride: 'carousel'
-					});
-				}
-			</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <div>
   <h2 id="product" class="qodef-m-title" style="text-align: center; font-weight: bold; padding-top: 30px;">
     Our Product
 </h2>
 
 <style>
-.custom-flex-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px; /* smaller gap */
-  margin: 0 20px 30px 20px;
-  background: #fff;
-  border-radius: 20px;
-  padding: 30px 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.image-col {
-  flex: 0 0 200px; /* fixed image width */
-  padding-right: 10px;
-}
-
-.image-col img.attachment {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.text-col {
-  flex: 1 1 auto;
-  margin-left: 0; /* no extra left margin */
-  padding-left: 5px; /* small padding closer to image */
-}
-
-.benefits-list {
-  columns: 2;
-  padding-left: 16px;
-  column-gap: 25px;
-  list-style-type: disc;
-  margin: 0;
-}
-
-.benefits-list li {
-  font-size: 18px;
-  margin-bottom: 8px;
-  line-height: 1.5;
-  word-break: break-word;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .custom-flex-section {
-    flex-direction: column;
-    align-items: center;
+/* Carousel wrapper and slides */
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 70vh; /* 30% reduced from full screen */
   }
 
-  .image-col {
-    flex: 0 0 auto;
+  /* Images inside carousel */
+  .carousel-item img {
     width: 100%;
-    max-width: 300px;
-    padding-right: 0;
-    margin-bottom: 20px;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the space properly */
   }
 
-  .text-col {
-    padding: 0 15px;
-    width: 100%;
-    margin-left: 0;
+  /* Style for the arrows */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .benefits-list {
-    columns: 1;
-    padding-left: 20px;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 50%;
+    background-size: 60% 60%;
   }
-}
+
+  .carousel-control-prev {
+    left: 10px;
+  }
+
+  .carousel-control-next {
+    right: 10px;
+  }
 </style>
 
 <section class="products-wrapper">
@@ -1710,6 +1599,202 @@
 
 
 
+
+				<h2 id="star"class="qodef-m-title" style="text-align: center; font-weight: bold; padding: 60px;">Care Mart Star
+					Levels</h2>
+				<style>
+					.star-levels {
+						display: flex;
+						flex-direction: column;
+						gap: 40px;
+						max-width: 80vw;
+						margin: auto;
+					}
+
+					.star-card {
+						background-color: #e0ecfa;
+						border-radius: 25px;
+						padding: 25px;
+						transition: transform 0.3s ease;
+						border: 3px solid;
+						box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+					}
+
+					.star-card:hover {
+						transform: translateY(-8px);
+					}
+
+					.star-title {
+						font-size: 26px;
+						font-weight: 900;
+						margin-bottom: 15px;
+						text-align: center;
+						text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+					}
+
+					.task-desc {
+						font-size: 18px;
+						color: #333;
+						margin-bottom: 20px;
+						text-align: center;
+					}
+
+					.week-tasks {
+						display: flex;
+						justify-content: space-between;
+						gap: 12px;
+						margin-bottom: 25px;
+					}
+
+					.week {
+						flex: 1;
+						background: #fff;
+						border-radius: 12px;
+						padding: 15px 10px;
+						text-align: center;
+						font-weight: 700;
+						color: #222;
+						border: 3px solid #9ec5fe;
+						font-size: 16px;
+						line-height: 1.6;
+					}
+
+					.week small {
+						display: block;
+						font-weight: 500;
+						color: #555;
+						font-size: 15px;
+					}
+
+					.reward {
+						background: linear-gradient(to right, #3b82f6, #60a5fa);
+						color: white;
+						font-weight: bold;
+						padding: 15px 20px;
+						border-radius: 15px;
+						text-align: center;
+						font-size: 18px;
+						line-height: 1.8;
+						box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+					}
+
+					.reward span {
+						font-size: 20px;
+						display: block;
+						margin: 5px 0;
+					}
+
+					.star-card.star-title {
+						color: #6366f1;
+						font-weight: 800;
+					}
+
+					/* ✅ Responsive for mobile */
+					@media (max-width: 768px) {
+						.week-tasks {
+							flex-direction: column;
+							align-items: stretch;
+						}
+
+						.week {
+							width: 100%;
+						}
+					}
+				</style>
+				</head>
+
+				<body>
+
+<div class="star-levels">
+
+  <!-- ⭐ 1 Star Level -->
+  <div class="star-card">
+    <div class="star-title">⭐ 1 Star Level</div>
+    <div class="task-desc">Sell <strong>1 product each week</strong> for 4 weeks and receive your reward!</div>
+    <div class="week-tasks">
+      <div class="week">Week 1<small>Total Sales: 1</small><small>Commission: ₹300</small></div>
+      <div class="week">Week 2<small>Total Sales: 1</small><small>Commission: ₹300</small></div>
+      <div class="week">Week 3<small>Total Sales: 1</small><small>Commission: ₹300</small></div>
+      <div class="week">Week 4<small>Total Sales: 1</small><small>Commission: ₹300</small></div>
+    </div>
+    <div class="reward">
+      <span>🎁 Total Commission: ₹1,200</span>
+      <span>🎉 Performance Bonus: 1 Juice Bottle worth ₹3,000</span>
+      <span>💰 Grand Total Bonus: ₹4,200</span>
+    </div>
+  </div>
+
+  <!-- ⭐ 2 Star Level -->
+  <div class="star-card">
+    <div class="star-title">⭐ 2 Star Level</div>
+    <div class="task-desc">Sell <strong>2 products each week</strong> for 4 weeks and unlock your rewards!</div>
+    <div class="week-tasks">
+      <div class="week">Week 1<small>Total Sales: 2</small><small>Commission: ₹600</small></div>
+      <div class="week">Week 2<small>Total Sales: 2</small><small>Commission: ₹600</small></div>
+      <div class="week">Week 3<small>Total Sales: 2</small><small>Commission: ₹600</small></div>
+      <div class="week">Week 4<small>Total Sales: 2</small><small>Commission: ₹600</small></div>
+    </div>
+    <div class="reward">
+      <span>🎁 Total Commission: ₹2,400</span>
+      <span>🎉 Performance Bonus: 2 Juice Bottles worth ₹6,000</span>
+      <span>💰 Grand Total Bonus: ₹8,400</span>
+    </div>
+  </div>
+
+  <!-- ⭐ 3 Star Level -->
+  <div class="star-card">
+    <div class="star-title">⭐ 3 Star Level</div>
+    <div class="task-desc">Sell <strong>3 products each week</strong> for 4 weeks to start earning bonuses!</div>
+    <div class="week-tasks">
+      <div class="week">Week 1<small>Total Sales: 3</small><small>Commission: ₹900</small></div>
+      <div class="week">Week 2<small>Total Sales: 3</small><small>Commission: ₹900</small></div>
+      <div class="week">Week 3<small>Total Sales: 3</small><small>Commission: ₹900</small></div>
+      <div class="week">Week 4<small>Total Sales: 3</small><small>Commission: ₹900</small></div>
+    </div>
+    <div class="reward">
+      <span>🎁 Total Commission: ₹3,600</span>
+      <span>🎉 Performance Bonus: 3 Juice Bottles worth ₹9,000</span>
+      <span>💰 Grand Total Bonus: ₹12,600</span>
+    </div>
+  </div>
+
+  <!-- ⭐ 4 Star Level -->
+  <div class="star-card">
+    <div class="star-title">⭐ 4 Star Level</div>
+    <div class="task-desc">Sell <strong>4 products each week</strong> for 4 weeks to earn exciting rewards!</div>
+    <div class="week-tasks">
+      <div class="week">Week 1<small>Total Sales: 4</small><small>Commission: ₹1,200</small></div>
+      <div class="week">Week 2<small>Total Sales: 4</small><small>Commission: ₹1,200</small></div>
+      <div class="week">Week 3<small>Total Sales: 4</small><small>Commission: ₹1,200</small></div>
+      <div class="week">Week 4<small>Total Sales: 4</small><small>Commission: ₹1,200</small></div>
+    </div>
+    <div class="reward">
+      <span>🎁 Total Commission: ₹4,800</span>
+      <span>🎉 Performance Bonus: 4 Juice Bottles worth ₹12,000</span>
+      <span>💰 Grand Total Bonus: ₹16,800</span>
+    </div>
+  </div>
+
+  <!-- ⭐ 5 Star Level -->
+  <div class="star-card">
+    <div class="star-title">⭐ 5 Star Level</div>
+    <div class="task-desc">Sell <strong>5 products each week</strong> for 4 weeks to qualify for big rewards!</div>
+    <div class="week-tasks">
+      <div class="week">Week 1<small>Total Sales: 5</small><small>Commission: ₹1,500</small></div>
+      <div class="week">Week 2<small>Total Sales: 5</small><small>Commission: ₹1,500</small></div>
+      <div class="week">Week 3<small>Total Sales: 5</small><small>Commission: ₹1,500</small></div>
+      <div class="week">Week 4<small>Total Sales: 5</small><small>Commission: ₹1,500</small></div>
+    </div>
+    <div class="reward">
+      <span>🎁 Total Commission: ₹6,000</span>
+      <span>🎉 Performance Bonus: 5 Juice Bottles worth ₹21,000</span>
+      <span>💰 Grand Total Bonus: ₹27,000</span>
+    </div>
+  </div>
+
+</div>
+
+					
 			<style>
 				img.attachment {
 					border: none !important;
@@ -2058,7 +2143,6 @@
     }
 }
 
-    }
 </style>
 
 
@@ -2077,226 +2161,6 @@
 
 </div>
 				</div>
-
-				<h2 id="star"class="qodef-m-title" style="text-align: center; font-weight: bold; padding: 60px;">Care Mart Star
-					Levels</h2>
-				<style>
-					.star-levels {
-						display: flex;
-						flex-direction: column;
-						gap: 40px;
-						max-width: 80vw;
-						margin: auto;
-					}
-
-					.star-card {
-						background-color: #e0ecfa;
-						border-radius: 25px;
-						padding: 25px;
-						transition: transform 0.3s ease;
-						border: 3px solid;
-						box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-					}
-
-					.star-card:hover {
-						transform: translateY(-8px);
-					}
-
-					.star-title {
-						font-size: 26px;
-						font-weight: 900;
-						margin-bottom: 15px;
-						text-align: center;
-						text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-					}
-
-					.task-desc {
-						font-size: 18px;
-						color: #333;
-						margin-bottom: 20px;
-						text-align: center;
-					}
-
-					.week-tasks {
-						display: flex;
-						justify-content: space-between;
-						gap: 12px;
-						margin-bottom: 25px;
-					}
-
-					.week {
-						flex: 1;
-						background: #fff;
-						border-radius: 12px;
-						padding: 15px 10px;
-						text-align: center;
-						font-weight: 700;
-						color: #222;
-						border: 3px solid #9ec5fe;
-						font-size: 16px;
-						line-height: 1.6;
-					}
-
-					.week small {
-						display: block;
-						font-weight: 500;
-						color: #555;
-						font-size: 15px;
-					}
-
-					.reward {
-						background: linear-gradient(to right, #3b82f6, #60a5fa);
-						color: white;
-						font-weight: bold;
-						padding: 15px 20px;
-						border-radius: 15px;
-						text-align: center;
-						font-size: 18px;
-						line-height: 1.8;
-						box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
-					}
-
-					.reward span {
-						font-size: 20px;
-						display: block;
-						margin: 5px 0;
-					}
-
-					.star-card.star-title {
-						color: #6366f1;
-						font-weight: 800;
-					}
-
-					/* ✅ Responsive for mobile */
-					@media (max-width: 768px) {
-						.week-tasks {
-							flex-direction: column;
-							align-items: stretch;
-						}
-
-						.week {
-							width: 100%;
-						}
-					}
-				</style>
-				</head>
-
-				<body>
-
-					<div class="star-levels">
-
-						<!-- ⭐ 5 Star Level -->
-						<div class="star-card">
-							<div class="star-title">⭐ 5 Star Level</div>
-							<div class="task-desc">Sell <strong>5 products each week</strong> for 4 weeks to qualify for
-								big rewards!</div>
-							<div class="week-tasks">
-								<div class="week">Week 1<small>Total Sales: 5</small><small>Commission: ₹1,500</small>
-								</div>
-								<div class="week">Week 2<small>Total Sales: 5</small><small>Commission: ₹1,500</small>
-								</div>
-								<div class="week">Week 3<small>Total Sales: 5</small><small>Commission: ₹1,500</small>
-								</div>
-								<div class="week">Week 4<small>Total Sales: 5</small><small>Commission: ₹1,500</small>
-								</div>
-							</div>
-							<div class="reward">
-								<span>🎁 Total Commission: ₹6,000</span>
-								<span>🎉 Performance Bonus: 5 Juice Bottles worth ₹21,000</span>
-								<span>💰 Grand Total Bonus: ₹27,000</span>
-							</div>
-						</div>
-
-						<!-- ⭐ 4 Star Level -->
-						<div class="star-card">
-							<div class="star-title">⭐ 4 Star Level</div>
-							<div class="task-desc">Sell <strong>4 products each week</strong> for 4 weeks to earn
-								exciting rewards!</div>
-							<div class="week-tasks">
-								<div class="week">Week 1<small>Total Sales: 4</small><small>Commission: ₹1,200</small>
-								</div>
-								<div class="week">Week 2<small>Total Sales: 4</small><small>Commission: ₹1,200</small>
-								</div>
-								<div class="week">Week 3<small>Total Sales: 4</small><small>Commission: ₹1,200</small>
-								</div>
-								<div class="week">Week 4<small>Total Sales: 4</small><small>Commission: ₹1,200</small>
-								</div>
-							</div>
-							<div class="reward">
-								<span>🎁 Total Commission: ₹4,800</span>
-								<span>🎉 Performance Bonus: 4 Juice Bottles worth ₹12,000</span>
-								<span>💰 Grand Total Bonus: ₹16,800</span>
-							</div>
-						</div>
-
-						<!-- ⭐ 3 Star Level -->
-						<div class="star-card">
-							<div class="star-title">⭐ 3 Star Level</div>
-							<div class="task-desc">Sell <strong>3 products each week</strong> for 4 weeks to start
-								earning bonuses!</div>
-							<div class="week-tasks">
-								<div class="week">Week 1<small>Total Sales: 3</small><small>Commission: ₹900</small>
-								</div>
-								<div class="week">Week 2<small>Total Sales: 3</small><small>Commission: ₹900</small>
-								</div>
-								<div class="week">Week 3<small>Total Sales: 3</small><small>Commission: ₹900</small>
-								</div>
-								<div class="week">Week 4<small>Total Sales: 3</small><small>Commission: ₹900</small>
-								</div>
-							</div>
-							<div class="reward">
-								<span>🎁 Total Commission: ₹3,600</span>
-								<span>🎉 Performance Bonus: 3 Juice Bottles worth ₹9,000</span>
-								<span>💰 Grand Total Bonus: ₹12,600</span>
-							</div>
-						</div>
-
-						<!-- ⭐ 2 Star Level -->
-						<div class="star-card">
-							<div class="star-title">⭐ 2 Star Level</div>
-							<div class="task-desc">Sell <strong>2 products each week</strong> for 4 weeks and unlock
-								your rewards!</div>
-							<div class="week-tasks">
-								<div class="week">Week 1<small>Total Sales: 2</small><small>Commission: ₹600</small>
-								</div>
-								<div class="week">Week 2<small>Total Sales: 2</small><small>Commission: ₹600</small>
-								</div>
-								<div class="week">Week 3<small>Total Sales: 2</small><small>Commission: ₹600</small>
-								</div>
-								<div class="week">Week 4<small>Total Sales: 2</small><small>Commission: ₹600</small>
-								</div>
-							</div>
-							<div class="reward">
-								<span>🎁 Total Commission: ₹2,400</span>
-								<span>🎉 Performance Bonus: 2 Juice Bottles worth ₹6,000</span>
-								<span>💰 Grand Total Bonus: ₹8,400</span>
-							</div>
-						</div>
-
-						<!-- ⭐ 1 Star Level -->
-						<div class="star-card">
-							<div class="star-title">⭐ 1 Star Level</div>
-							<div class="task-desc">Sell <strong>1 product each week</strong> for 4 weeks and receive
-								your reward!</div>
-							<div class="week-tasks">
-								<div class="week">Week 1<small>Total Sales: 1</small><small>Commission: ₹300</small>
-								</div>
-								<div class="week">Week 2<small>Total Sales: 1</small><small>Commission: ₹300</small>
-								</div>
-								<div class="week">Week 3<small>Total Sales: 1</small><small>Commission: ₹300</small>
-								</div>
-								<div class="week">Week 4<small>Total Sales: 1</small><small>Commission: ₹300</small>
-								</div>
-							</div>
-							<div class="reward">
-								<span>🎁 Total Commission: ₹1,200</span>
-								<span>🎉 Performance Bonus: 1 Juice Bottle worth ₹3,000</span>
-								<span>💰 Grand Total Bonus: ₹4,200</span>
-							</div>
-						</div>
-
-					</div>
-
 					<footer id="footer"
 						style="background-color: #9ec5fe; color: #060606; padding: 30px 15px; font-family: Arial, sans-serif;">
 						<div
